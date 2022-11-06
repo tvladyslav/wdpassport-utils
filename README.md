@@ -7,21 +7,36 @@ This script let you unlock, change password and erase Western Digital Passport d
 
 <h1> Install </h1>
 
-In order to run this script you need to install "lsscsi" command and "py_sg" library. 
+<h2> Dependencies from OS repository </h2>
 
-For example on Ubuntu you can install the missing dependancies with
-```
+For example on Ubuntu you can install the missing dependencies with
+
+```bash
 sudo apt-get install python3-pip python3-dev lsscsi
 ```
 
-For Fedora these are dependancies:
-```
+For Fedora these are dependencies:
+
+```bash
 sudo dnf install python3-pip python3-devel lsscsi
 ```
 
-Now you need to get py_sg for python3. Clone the repo using command below and follow installation guide from README.md
+<h2> Now you need to get py3_sg </h2>
+
+Easy way:
+
+```bash
+# Use sudo. py3_sg must land somewhere in /usr/local/lib64/python3.7/site-packages,
+# not in /home folder!
+sudo pip3 install py3_sg
+sudo pip3 show py3_sg
 ```
-git clone git@github.com:crypto-universe/py_sg.git
+
+Hard way:
+clone the repo using command below and follow installation guide from README.md
+
+```bash
+git clone git@github.com:tvladyslav/py3_sg.git
 ```
 
 <h1> Usage </h1>
